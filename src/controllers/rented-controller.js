@@ -54,8 +54,7 @@ export const update = async (req, res) => {
         movie_rented: req.body.movie_rented,
         rent_date: req.body.rent_date,
         return_date: req.body.return_date,
-      },
-      { new: true, runValidators: true }
+      }
     ).exec();
 
     if (!rented) {
